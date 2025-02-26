@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio showcasing my Intro to Web Development projects and skills.">
+    <title>My Intro to Web Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate front-end developer with expertise in creating responsive and user-friendly web applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('app')">App</button>
+        </div>
+        <article class="web">
+            <figure>
+                <img src="img/project1.png" alt="Screenshot of Project 1">
+                <figcaption>Project 1: Responsive Web Design</figcaption>
+            </figure>
+            <p>A fully responsive website built with HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="app">
+            <figure>
+                <img src="img/project2.png" alt="Screenshot of Project 2">
+                <figcaption>Project 2: JavaScript App</figcaption>
+            </figure>
+            <p>An interactive web application demonstrating JavaScript functionality.</p>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Accessibility & SEO</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My GITHUB Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
